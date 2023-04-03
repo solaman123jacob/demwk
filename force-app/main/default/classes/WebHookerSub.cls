@@ -26,11 +26,12 @@ while(parser.nextToken()!=null)
     repo=parser.getText();
 
    }
+
+
+}
 gitpush__c gp=new gitpush__c();
 gp.Name = ps!=null?ps.name:'';
-insert gp;
-}
-            
+     insert gp;       
         } catch (Exception e) {
             System.debug('sadaa'+e.getMessage());
         }
